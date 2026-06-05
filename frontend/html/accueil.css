@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;  
+    box-sizing: border-box;
+    background-color:rgb(59, 52, 52);
+    color:white;
+}
+
+body{
+    background-color:rgb(224, 15, 15);
+    width:100vw;
+    height:100dvh;
+}
+
+header{
+    background-color: aqua;
+    margin-left:1%;
+    padding-top:1%;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* je cache le menu latérale qui a pour classe hidden*/
+.hidden{
+    display:none;
+}
+
+aside{
+    position:absolute;
+    width:70vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    border:1px solid rgb(0, 0, 0);
+}
+
+/*bloc affichant le verset du jour*/
+.verset-du-jour{
+    margin:auto;
+    margin-top:0.5rem;
+    width:90%;
+    height:25%;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.verset-du-jour h3{
+    background-color:rgb(0, 0, 0);
+    width:100%;
+    text-align:start;
+    padding-top:5%;
+    padding-left:5%;
+}
+.verset_du_jour{
+    background-color:antiquewhite;
+    padding: 1%;
+    align-self:center;
+    width:90%;
+    height:50%;
+}
+.voir-plus{
+    background-color:rgb(0, 0, 0);
+    width:25%;
+    height:15%;
+    border-radius:20px;
+    align-self:flex-end;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:5%;
+    margin-bottom:3%;
+}
+
+/*ligne d'esthétique et de séparation*/
+.ligne{
+    margin:auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width:90%;
+    border:0.5px solid black;
+}
+
+/*bloc affichant les dernières notes*/
+
+.recents{
+    overflow:hidden;
+    background-color:antiquewhite;
+    margin-left:5%;
+    width:50%;
+    height:6%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+.recents h3{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding-left:5%;
+}
+.elements-recents{
+    overflow:hidden;
+    background-color:antiquewhite;
+    margin-left:5%;
+    width:90%;
+    height:45%;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+}
+
+.autres-notes{
+    background-color:aquamarine;
+    width: 100%;
+    height:100%;
+    display:flex;
+}
+.voir-plus1{
+    background-color:rgb(0, 0, 0);
+    width:100%;
+    height:10%;
+    padding-right:5%;
+    align-self:flex-end;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+/*style du bouton affichant les options*/
+.bouton{
+    margin-top:3%;
+    width:100%;
+    height:7%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.bouton-01{
+    margin-right:5%;
+    width:15%;
+    height:100%;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:3rem;
+}
+
+/*style des options affichées après le clic sur le bouton*/
+.boutons{
+    margin-top:3%;
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+.boutonmenu1{
+    width:30%;
+    height:3rem;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hidden{
+    display:none;
+}
+
+/*FIN DU STYLE DU PREMIER ECRAN*/
