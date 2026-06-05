@@ -1,0 +1,77 @@
+/*DEBUT DU STYLE ASSISTANT*/
+
+*{
+    margin:0;
+    padding:0;  
+    box-sizing: border-box;
+    background-color:rgb(59, 52, 52);
+    color:white;
+}
+
+body{
+    background-color:rgb(224, 15, 15);
+    width:100vw;
+    height:100dvh;
+}
+
+header{
+    background-color: aqua;
+    margin-left:1%;
+    padding-top:1%;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*display:flex column pour ajuster l'espace*/
+.assistant1{
+    background-color: chocolate;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    gap:5rem;
+    
+}
+
+/*style de la salutation de l'assistant*/
+.salutation{
+    background-color: blue;
+    align-self: flex-end;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 70%;
+    height:20%;
+}
+h3{
+    height: 25%;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*style des questions de l'assistant*/
+.poser-question{
+    background-color: aquamarine;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+.question{
+    background-color: rgb(5, 5, 5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    height:5rem;
+    border-radius: 50px;
+}
+
+/*FIN DU STYLE ASSISTANT*/
