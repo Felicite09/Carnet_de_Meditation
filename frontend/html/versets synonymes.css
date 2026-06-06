@@ -1,4 +1,4 @@
-/*DEBUT STYLE DE DICTIONNAIRE*/
+/*DEBUT STYLE DE VERSETS SYNONYMES*/
 
 *{
     margin:0;
@@ -57,4 +57,17 @@ header{
     border-style:none;
 }
 
-/*FIN DU STYLE DE DICTIONNAIRE*/
+.felicite{
+    background-color: bisque;
+    margin:auto;
+    position:relative;
+    top:20%;
+    width:50%;
+    height:20%;
+    border: black solid 2px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*FIN DU STYLE DE VERSETS SYNONYMES*/
