@@ -1,0 +1,35 @@
+/*DEBUT STYLE DE MARQUEES*/
+
+*{
+    margin:0;
+    padding:0;  
+    box-sizing: border-box;
+    background-color:rgb(59, 52, 52);
+    color:white;
+}
+
+body{
+    background-color:rgb(224, 15, 15);
+    width:100vw;
+    height:100dvh;
+}
+
+header{
+    margin-left:1%;
+    padding-top:1%;
+    display:flex;
+    gap:02rem;
+}
+
+.marques{
+    background-color: aqua;
+    width: 35%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+/*FIN STYLE DE MARQUES*/
