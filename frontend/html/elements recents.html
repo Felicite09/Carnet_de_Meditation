@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elements recents.css">
     <title>Toutes les notes</title>
 </head>
 <body>
     <header>
+        <nav class="en-tete">
         <button type="button" class="RETOUR">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.7498 16.25H8.4373L14.9998 22.8125L14.1748 23.75L6.0498 15.625L14.1748 7.5L14.9998 8.4375L8.4373 15H23.7498V16.25Z" fill="black"/>
             </svg>
-        </button><span><textarea placeholder="Chercher une note"></textarea></span>
+        </button>
 
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <div class="barre-de-recherche">
+            <input type="text" placeholder="Rechercher une note" class="recherche-note">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="loupe">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
-        </span>
+        </div>
+        </nav>
+
+        <section class="sortes-dossiers">
+            <button type="button" class="toutes-les-notes" id="toutes-les-notes">Tout</button>
+            <table></table>
+            <button type="button" class="toutes-les-notes" id="dossiers">Dossiers</button>
+        </section>
+
     </header>
 
     <section>
