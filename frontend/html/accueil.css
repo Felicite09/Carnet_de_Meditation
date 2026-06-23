@@ -31,12 +31,30 @@ header{
 
 aside{
     position:absolute;
+    padding-top:1%;
     width:70vw;
     height:100vh;
     display:flex;
     flex-direction:column;
     border:1px solid rgb(0, 0, 0);
+    background-color: blueviolet;
+    padding-left: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
 }
+
+.bouttonmenu{
+    display:flex;
+    align-items:center;
+    gap:1.2rem;
+    background-color:transparent;
+    border:none;
+    font-size:1.2rem;
+    font-weight: 500;
+    cursor:pointer;
+}
+
 
 /*bloc affichant le verset du jour*/
 .verset-du-jour{
