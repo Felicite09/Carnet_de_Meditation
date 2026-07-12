@@ -2,18 +2,16 @@
     margin:0;
     padding:0;  
     box-sizing: border-box;
-    background-color:rgb(59, 52, 52);
     color:white;
 }
 
 body{
-    background-color:rgb(224, 15, 15);
     width:100vw;
     height:100dvh;
+    overflow:hidden;
 }
 
 header{
-    background-color: aqua;
     margin-left:1%;
     padding-top:1%;
     display:flex;
@@ -22,6 +20,16 @@ header{
     font-family: "Berkshire Swash", serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom:2%;
+}
+
+header span{
+    color: black;
+}
+
+.MENU{
+    background-color:transparent;
+    border-style: none;
 }
 
 /* je cache le menu latérale qui a pour classe hidden*/
@@ -31,33 +39,36 @@ header{
 
 aside{
     position:absolute;
-    padding-top:1%;
     width:70vw;
     height:100vh;
     display:flex;
     flex-direction:column;
     border:1px solid rgb(0, 0, 0);
-    background-color: blueviolet;
-    padding-left: 0.5rem;
+    background-color:white;
     display:flex;
     flex-direction: column;
-    gap:2rem;
+    
 }
 
 .bouttonmenu{
+    background-color: transparent;
+    padding-left:2.5%;
+    height:7%;
     display:flex;
     align-items:center;
     gap:1.2rem;
-    background-color:transparent;
     border:none;
     font-size:1.2rem;
     font-weight: 500;
     cursor:pointer;
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 
 /*bloc affichant le verset du jour*/
 .verset-du-jour{
+    background-color:#D9D9D9;
     margin:auto;
     margin-top:0.5rem;
     width:90%;
@@ -68,25 +79,30 @@ aside{
     flex-direction:column;
     justify-content:space-between;
 }
-.verset-du-jour h3{
-    background-color:rgb(0, 0, 0);
+.verset-du-jour h2{
+    background-color:transparent;
     width:100%;
     text-align:start;
-    padding-top:5%;
+    display:flex;
+    align-items:center;
+    padding-top:3%;
     padding-left:5%;
+    color:black;
 }
 .verset_du_jour{
-    background-color:antiquewhite;
+    background-color:transparent;
     padding: 1%;
     align-self:center;
     width:90%;
     height:50%;
+    border: 1px solid black;
 }
 .voir-plus{
     background-color:rgb(0, 0, 0);
     width:25%;
     height:15%;
     border-radius:20px;
+    border:none;
     align-self:flex-end;
     display:flex;
     justify-content:center;
@@ -160,6 +176,9 @@ aside{
     align-items:center;
 }
 .bouton-01{
+    background-color: #D9D9D9;
+    border-width: 2px;
+    border-color: black;
     margin-right:5%;
     width:15%;
     height:100%;

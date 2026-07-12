@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mon profil.css">
     <title>Mon profil</title>
 </head>
 <body>
@@ -14,26 +18,41 @@
         </button><span class="titre-header">Mon profil</span>
     </header>
 
-    <section>
+    <section class="profil">
+        <div class="photo-profil"></div>
         <button type="button" class="ajout-photo"> Ajouter une photo</button>
     </section>
 
-    <section>
-        <table>
+    <section class="infos-profil">
+        <table class="tableau-profil">
             <tr>
-                <td>Prénom</td>
-                <td><input type="text"></td>
+                <td>
+                    <label>
+                        Prénom
+                        <input type="text">
+                    </label>
+                </td>
             </tr>
             <tr>
-                <td>Nom</td>
-                <td><input type="text"></td>
+                <td>
+                    <label>
+                        Nom
+                        <input type="text">
+                    </label>
+                </td>
             </tr>
             <tr>
-                <td>Adresse e-mail</td>
-                <td><input type="email"></td>
+                <td>
+                    <label>
+                        Adresse e-mail
+                        <input type="email">
+                    </label>
+                </td>
             </tr>
         </table>
     </section>
+
+    <button type="button" class="Enregistrer">Enregistrer</button>
 
 
 </body>
