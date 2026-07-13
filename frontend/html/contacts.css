@@ -4,34 +4,36 @@
     margin:0;
     padding:0;  
     box-sizing: border-box;
-    background-color:rgb(59, 52, 52);
-    color:white;
 }
 
 body{
-    background-color:rgb(224, 15, 15);
-    width:100vw;
+    min-width:100vw;
+    max-width: 100vw;
     height:100dvh;
+    overflow: hidden;
 }
 
 header{
-    background-color: aqua;
     margin-left:1%;
     padding-top:1%;
     display:flex;
     align-items:center;
     gap:0.5rem;
-    font-family: "Berkshire Swash", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Patua One", sans-serif;
+    font-weight: bold;
+    margin-bottom:2%;
+}
+
+.MENU{
+    background-color:transparent;
+    border-style: none;
 }
 
 .note{
-    background-color: blue;
-    margin-left:auto;
-    margin-right:auto;
+    margin:auto;
+    margin-top:10%;
     width:80%;
-    height:40%;
+    height:50%;
     border: black solid 1px;
     padding:2%;
     display:flex;
@@ -40,18 +42,27 @@ header{
 }
 
 .contenu-note{
-    background-color: rgb(66, 129, 129);
-    height:75%;
+    flex-grow: 1;
     display:flex;
     flex-direction: column;
-    gap:4rem;
+    gap:2rem;
+    font-family: "Playfair Display", serif;
+
 }
 
 .conceptrice{
-    align-self: flex-end;
-    width:55%;
+    width:80%;
+    margin-top:auto;
+    margin-bottom:auto;
+    align-self:end;
+    text-align: end;
     display:flex;
     flex-direction: column;
-    gap:0.3rem;
+    gap:1rem;
 }
+
+.mail{
+    font-weight:normal;
+}
+
 /*FIN DU STYLE CONTACTS*/
