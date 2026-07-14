@@ -11,7 +11,6 @@ body{
 }
 
 .menu-clavier{
-    background-color: pink;
     width:100vw;
     display:flex;
     gap:0.3rem;
@@ -19,11 +18,17 @@ body{
 }
 
 .btn1{
+    background-color:#969696;
     width:20%;
+    border-width: 1px;
+}
+.btn1:hover{
+    border-width: 2px;
+    background-color: #656565;
 }
 
 .espace-clavier{
-    background-color: bisque;
+    background-color: #D9D9D9;
     overflow: hidden;
     width:100vw;
     height:35vh;
@@ -36,10 +41,22 @@ body{
 }
 
 .btn{
+    background-color:#969696;
     width:20%;
+    border-width: 1px;
+}
+.btn:hover{
+    border-width: 2px;
+    background-color: #656565;
 }
 .btn-g{
+    background-color:#969696;
     width:40%;
+    border-width: 1px;
+}
+.btn-g:hover{
+    border-width: 2px;
+    background-color: #656565;
 }
 .h1{
     border-top-left-radius: 20px;
@@ -53,7 +70,6 @@ body{
 }
 
 .groupement{
-    background-color: rgb(108, 224, 185);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -62,7 +78,6 @@ body{
 }
 
 .titres{
-    background-color: aquamarine;
     width:100%;
     height:16.6%;
     display:flex;
@@ -71,7 +86,6 @@ body{
 }
 
 .formes{
-    background-color: cadetblue;
     width:70%;
     height:100%;
     display:flex;
@@ -80,7 +94,6 @@ body{
 }
 
 .espaces{
-    background-color: chartreuse;
     width:30%;
     height:100%;
     display:flex;
@@ -89,7 +102,6 @@ body{
 }
 
 .alignement{
-    background-color: rgb(55, 112, 93);
     width:40%;
     height:100%;
     display:flex;
@@ -98,7 +110,6 @@ body{
 }
 
 .listes{
-    background-color: rgb(28, 57, 47);
     width:60%;
     height:100%;
     display:flex;
@@ -107,7 +118,6 @@ body{
 }
 
 .reserve{
-    background-color: rgb(22, 35, 31);
     width:100%;
     height:17%;
     display:flex;
