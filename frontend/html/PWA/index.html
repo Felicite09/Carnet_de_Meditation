@@ -38,6 +38,9 @@
     <title>My Notebook</title>
   </head>
   <body>
+
+    <!--ECRAN D'ACCUEIL-->
+
     <section id="accueil" class="ecran hidden">
       <div class="header1">
         <button type="button" id="MENU" class="MENU">
@@ -126,22 +129,17 @@
         </button>
       </div>
 
-      <section class="verset-du-jour">
-        <h2>Verset du jour</h2>
-        <div class="verset_du_jour"></div>
-        <button type="button" class="voir-plus">Voir plus</button>
-      </section>
+      <!--Bloc des notes et fiches récentes-->
 
-      <div class="ligne"></div>
-      <section class="recents">
-        <h3>Récents</h3>
-      </section>
-
-      <section class="elements-recents">
-        <table></table>
-        <div class="autres-notes">
-          <a href="elements recents.html" class="voir-plus1">Tout voir</a>
+      <section id="notes-et-fiches">
+        <div class="notes-et-fiches">
+          <button>Mes notes</button>
+          <button>Mes fiches</button>
+          <button>Dossiers</button>
         </div>
+        <table class="notes hidde"></table>
+        <table class="fiches hidde"></table>
+        <table class="dossiers hidde"></table>
       </section>
 
       <div class="bouton">
@@ -150,7 +148,7 @@
 
       <!--FIN DU PREMIER ECRAN !-->
 
-      <section id="opacite-boutons" class="boutons hidde">
+      <section id="opacite-boutons" class="boutons hidden">
         <button class="boutonmenu1">Nouvelle note</button>
         <button class="boutonmenu1">Nouvelle fiche</button>
         <button class="boutonmenu1">Bible</button>
@@ -740,6 +738,8 @@
       </div>
     </section>
 
+    <!--ECRAN DE NOUVELLE NOTE /+ -->
+
     <section id="nouvelle-note" class="ecran hidden">
       <div class="header3">
         <div class="header3-1">
@@ -1087,11 +1087,9 @@
       </div>
     </section>
 
-
-
     <!--ECRAN BIBLE AT et NT-->
 
-    <section id="bible" class="ecran hidde">
+    <section id="bible" class="ecran hidden">
       <section class="header4">
         <div class="en-tete">
           <div class="rond">
