@@ -463,7 +463,7 @@ h2 .user{
 
 }
 
-/*style du menu clavier DANS NOUVELLE NOTE*/
+/*style du menu clavier DANS NOUVELLE FICHE*/
 
 .section-menu-clavier{
     display: flex;
@@ -471,7 +471,8 @@ h2 .user{
     position: fixed;
     bottom:0;
     width:100%;
-    
+    background-color: #D9D9D9;
+
 }
 
 .menu-clavier{
@@ -739,16 +740,16 @@ h2 .user{
     position: fixed;
     bottom:0;
     width:100%;
-    
+    background-color: #D9D9D9;
 }
 
 .menu-clavier{
     position: relative;
     width:100%;
     display:flex;
+    justify-content: space-between;
     gap:0.3rem;
-    border:black solid 1px;
-    
+    border:none;
 }
 
 .btn1{
@@ -808,7 +809,7 @@ h2 .user{
     justify-content: center;
     width: 100%;
     height:16%;
-    gap:2rem;
+    gap:1rem;
 }
 
 .titres{
@@ -831,12 +832,12 @@ h2 .user{
     width:30%;
     height:100%;
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap:0.5rem;
 }
 
 .alignement{
-    width:40%;
+    width:60%;
     height:100%;
     display:flex;
     justify-content: center;
@@ -847,7 +848,7 @@ h2 .user{
     width:60%;
     height:100%;
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap:0.5rem;
 }
 
@@ -897,6 +898,60 @@ h2 .user{
     width:50%;
     height:20%;
     border-radius: 50px;
+}
+
+.tailleH1{
+    font-size:2rem ;
+    font-weight: bold;
+}
+.tailleH2{
+    font-size:1.5rem ;
+    font-weight: bold;
+}
+.tailleH3{
+    font-size:1.17rem ;
+    font-weight: bold;
+}
+.tailleH4{
+    font-size:1rem ;
+    font-weight: bold;
+}
+.taillecorpss{
+    font-size:1rem ;
+    font-weight:normal;
+}
+
+.style-normal{
+    font-size:1rem;
+    font-weight: normal;
+}
+.styleB{
+    font-weight: bold;
+}
+.styleI{
+    font-style: italic;
+}
+.styleU{
+    text-decoration: underline;
+}
+.styleS{
+    text-decoration: line-through;
+}
+
+.tab-d{
+    margin-left:2rem;
+}
+.tab-g{
+    margin-right:2rem;
+}
+.xtreme-g{
+    text-align: start;
+}
+.xtreme-d{
+    text-align: end;
+}
+.centre{
+    text-align: center;
 }
 
 
