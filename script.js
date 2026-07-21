@@ -426,6 +426,7 @@ Retour("retour-39","chap-39")
 function ContenuChapites (chapitres,livres,Livre,Chapitre){
 document.getElementById(chapitres).addEventListener("click", function(){
   document.getElementById(livres).classList.add("hidden")
+  document.getElementById("chapitres-wrapper").classList.add("hidden")
   document.getElementById("affichage").classList.remove("hidden")
   document.getElementById("affichage-texte").textContent=AncienTestament[Livre][Chapitre]
 })
