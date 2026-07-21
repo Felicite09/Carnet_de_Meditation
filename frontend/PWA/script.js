@@ -196,6 +196,18 @@ document.getElementById("centre").addEventListener("click", function () {
   document.getElementById("ecrire").classList.remove("xtreme-d");
 });
 
+
+//Bouton d'accès à la BIBLE à partir des notes :
+document.getElementById("bible2").addEventListener("click", function(){
+  document.getElementById("nouvelle-note").classList.add("hidden")
+  document.getElementById("bible").classList.remove("hidden")
+})
+document.getElementById("retour-note-fiche").addEventListener("click",function(){
+  document.getElementById("bible").classList.add("hidden")
+  document.getElementById("nouvelle-note").classList.remove("hidden")
+})
+
+
 //configuration de LocalStorage :
 
 if (localStorage.getItem("notes-recentes") === null) {
@@ -403,4 +415,70 @@ Retour("retour-38","chap-38")
 lesChapitres("malachie","chap-39")
 Retour("retour-39","chap-39")
 
-// Affichage du contenu des 
+
+// Affichage du contenu des chapitres ( texte biblique) :
+
+function ContenuChapites (chapitres,livres,Livre,Chapitre){
+document.getElementById(chapitres).addEventListener("click", function(){
+  document.getElementById(livres).classList.add("hidden")
+  document.getElementById("affichage").classList.remove("hidden")
+  document.getElementById("affichage-texte").textContent=AncienTestament[Livre][Chapitre]
+})
+}
+
+ContenuChapites("gen-1", "chap-1", "Genèse", "1")
+ContenuChapites("gen-2", "chap-2", "Genèse", "2")
+ContenuChapites("gen-3", "chap-3", "Genèse", "3")
+ContenuChapites("gen-4", "chap-4", "Genèse", "4")
+ContenuChapites("gen-5", "chap-5", "Genèse", "5")
+ContenuChapites("gen-6", "chap-6", "Genèse", "6")
+ContenuChapites("gen-7", "chap-7", "Genèse", "7")
+ContenuChapites("gen-8", "chap-8", "Genèse", "8")
+ContenuChapites("gen-9", "chap-9", "Genèse", "9")
+ContenuChapites("gen-10", "chap-10", "Genèse", "10")
+ContenuChapites("gen-11", "chap-11", "Genèse", "11")
+ContenuChapites("gen-12", "chap-12", "Genèse", "12")
+ContenuChapites("gen-13", "chap-13", "Genèse", "13")
+ContenuChapites("gen-14", "chap-14", "Genèse", "14")
+ContenuChapites("gen-15", "chap-15", "Genèse", "15")
+ContenuChapites("gen-16", "chap-16", "Genèse", "16")
+ContenuChapites("gen-17", "chap-17", "Genèse", "17")
+ContenuChapites("gen-18", "chap-18", "Genèse", "18")
+ContenuChapites("gen-19", "chap-19", "Genèse", "19")
+ContenuChapites("gen-20", "chap-20", "Genèse", "20")
+ContenuChapites("gen-21", "chap-21", "Genèse", "21")
+ContenuChapites("gen-22", "chap-22", "Genèse", "22")
+ContenuChapites("gen-23", "chap-23", "Genèse", "23")
+ContenuChapites("gen-24", "chap-24", "Genèse", "24")
+ContenuChapites("gen-25", "chap-25", "Genèse", "25")
+ContenuChapites("gen-26", "chap-26", "Genèse", "26")
+ContenuChapites("gen-27", "chap-27", "Genèse", "27")
+ContenuChapites("gen-28", "chap-28", "Genèse", "28")
+ContenuChapites("gen-29", "chap-29", "Genèse", "29")
+ContenuChapites("gen-30", "chap-30", "Genèse", "30")
+ContenuChapites("gen-31", "chap-31", "Genèse", "31")
+ContenuChapites("gen-32", "chap-32", "Genèse", "32")
+ContenuChapites("gen-33", "chap-33", "Genèse", "33")
+ContenuChapites("gen-34", "chap-34", "Genèse", "34")
+ContenuChapites("gen-35", "chap-35", "Genèse", "35")
+ContenuChapites("gen-36", "chap-36", "Genèse", "36")
+ContenuChapites("gen-37", "chap-37", "Genèse", "37")
+ContenuChapites("gen-38", "chap-38", "Genèse", "38")
+ContenuChapites("gen-39", "chap-39", "Genèse", "39")
+ContenuChapites("gen-40", "chap-40", "Genèse", "40")
+ContenuChapites("gen-41", "chap-41", "Genèse", "41")
+ContenuChapites("gen-42", "chap-42", "Genèse", "42")
+ContenuChapites("gen-43", "chap-43", "Genèse", "43")
+ContenuChapites("gen-44", "chap-44", "Genèse", "44")
+ContenuChapites("gen-45", "chap-45", "Genèse", "45")
+ContenuChapites("gen-46", "chap-46", "Genèse", "46")
+ContenuChapites("gen-47", "chap-47", "Genèse", "47")
+ContenuChapites("gen-48", "chap-48", "Genèse", "48")
+ContenuChapites("gen-49", "chap-49", "Genèse", "49")
+ContenuChapites("gen-50", "chap-50", "Genèse", "50")
+
+
+document.getElementById("retour-chapitres").addEventListener("click",function(){
+  document.getElementById("affichage").classList.add("hidden")
+  document.getElementById("chap-1").classList.remove("hidden")
+})

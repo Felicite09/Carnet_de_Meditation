@@ -712,22 +712,13 @@
 
     <section id="bible" class="ecran hidde">
       <section class="header4">
-        <div class="en-tete">
-          <div class="rond">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15.5 14H14.71L14.43 13.73C15.444 12.5541 16.0012 11.0527 16 9.5C16 8.21442 15.6188 6.95772 14.9046 5.8888C14.1903 4.81988 13.1752 3.98676 11.9874 3.49479C10.7997 3.00282 9.49279 2.87409 8.23192 3.1249C6.97104 3.3757 5.81285 3.99477 4.90381 4.90381C3.99477 5.81285 3.3757 6.97104 3.1249 8.23192C2.87409 9.49279 3.00282 10.7997 3.49479 11.9874C3.98676 13.1752 4.81988 14.1903 5.8888 14.9046C6.95772 15.6188 8.21442 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
-                fill="black"
-              />
+
+        <div class="en-tete1">
+          <button id="retour-note-fiche" class="retour">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </div>
-          <button class="en-tete-bouton2" type="button">Rechercher</button>
+          </button>
         </div>
 
         <div class="en-tete">
@@ -888,11 +879,15 @@
     </section>
 
 
-
     <!--ECRAN DE L'AFFICHAGE DES TEXTES-->
 
-    <section id="affichage-texte" class="hidden">
-
+    <section id="affichage" class="hidden affichage-texte">
+      <button id="retour-chapitres" class="retour">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div id="affichage-texte"></div>
     </section>
 
 
@@ -908,56 +903,56 @@
         </button>
         <h1>Genèse</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
-          <button type="button" class="chapter">30</button>
-          <button type="button" class="chapter">31</button>
-          <button type="button" class="chapter">32</button>
-          <button type="button" class="chapter">33</button>
-          <button type="button" class="chapter">34</button>
-          <button type="button" class="chapter">35</button>
-          <button type="button" class="chapter">36</button>
-          <button type="button" class="chapter">37</button>
-          <button type="button" class="chapter">38</button>
-          <button type="button" class="chapter">39</button>
-          <button type="button" class="chapter">40</button>
-          <button type="button" class="chapter">41</button>
-          <button type="button" class="chapter">42</button>
-          <button type="button" class="chapter">43</button>
-          <button type="button" class="chapter">44</button>
-          <button type="button" class="chapter">45</button>
-          <button type="button" class="chapter">46</button>
-          <button type="button" class="chapter">47</button>
-          <button type="button" class="chapter">48</button>
-          <button type="button" class="chapter">49</button>
-          <button type="button" class="chapter">50</button>
+          <button type="button" class="chapter" id="gen-1">1</button>
+          <button type="button" class="chapter" id="gen-2">2</button>
+          <button type="button" class="chapter" id="gen-3">3</button>
+          <button type="button" class="chapter" id="gen-4">4</button>
+          <button type="button" class="chapter" id="gen-5">5</button>
+          <button type="button" class="chapter" id="gen-6">6</button>
+          <button type="button" class="chapter" id="gen-7">7</button>
+          <button type="button" class="chapter" id="gen-8">8</button>
+          <button type="button" class="chapter" id="gen-9">9</button>
+          <button type="button" class="chapter" id="gen-10">10</button>
+          <button type="button" class="chapter" id="gen-11">11</button>
+          <button type="button" class="chapter" id="gen-12">12</button>
+          <button type="button" class="chapter" id="gen-13">13</button>
+          <button type="button" class="chapter" id="gen-14">14</button>
+          <button type="button" class="chapter" id="gen-15">15</button>
+          <button type="button" class="chapter" id="gen-16">16</button>
+          <button type="button" class="chapter" id="gen-17">17</button>
+          <button type="button" class="chapter" id="gen-18">18</button>
+          <button type="button" class="chapter" id="gen-19">19</button>
+          <button type="button" class="chapter" id="gen-20">20</button>
+          <button type="button" class="chapter" id="gen-21">21</button>
+          <button type="button" class="chapter" id="gen-22">22</button>
+          <button type="button" class="chapter" id="gen-23">23</button>
+          <button type="button" class="chapter" id="gen-24">24</button>
+          <button type="button" class="chapter" id="gen-25">25</button>
+          <button type="button" class="chapter" id="gen-26">26</button>
+          <button type="button" class="chapter" id="gen-27">27</button>
+          <button type="button" class="chapter" id="gen-28">28</button>
+          <button type="button" class="chapter" id="gen-29">29</button>
+          <button type="button" class="chapter" id="gen-30">30</button>
+          <button type="button" class="chapter" id="gen-31">31</button>
+          <button type="button" class="chapter" id="gen-32">32</button>
+          <button type="button" class="chapter" id="gen-33">33</button>
+          <button type="button" class="chapter" id="gen-34">34</button>
+          <button type="button" class="chapter" id="gen-35">35</button>
+          <button type="button" class="chapter" id="gen-36">36</button>
+          <button type="button" class="chapter" id="gen-37">37</button>
+          <button type="button" class="chapter" id="gen-38">38</button>
+          <button type="button" class="chapter" id="gen-39">39</button>
+          <button type="button" class="chapter" id="gen-40">40</button>
+          <button type="button" class="chapter" id="gen-41">41</button>
+          <button type="button" class="chapter" id="gen-42">42</button>
+          <button type="button" class="chapter" id="gen-43">43</button>
+          <button type="button" class="chapter" id="gen-44">44</button>
+          <button type="button" class="chapter" id="gen-45">45</button>
+          <button type="button" class="chapter" id="gen-46">46</button>
+          <button type="button" class="chapter" id="gen-47">47</button>
+          <button type="button" class="chapter" id="gen-48">48</button>
+          <button type="button" class="chapter" id="gen-49">49</button>
+          <button type="button" class="chapter" id="gen-50">50</button>
         </div>
       </section>
 
@@ -969,46 +964,46 @@
         </button>
         <h1>Exode</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
-          <button type="button" class="chapter">30</button>
-          <button type="button" class="chapter">31</button>
-          <button type="button" class="chapter">32</button>
-          <button type="button" class="chapter">33</button>
-          <button type="button" class="chapter">34</button>
-          <button type="button" class="chapter">35</button>
-          <button type="button" class="chapter">36</button>
-          <button type="button" class="chapter">37</button>
-          <button type="button" class="chapter">38</button>
-          <button type="button" class="chapter">39</button>
-          <button type="button" class="chapter">40</button>
+          <button type="button" class="chapter" id="exo-1">1</button>
+          <button type="button" class="chapter" id="exo-2">2</button>
+          <button type="button" class="chapter" id="exo-3">3</button>
+          <button type="button" class="chapter" id="exo-4">4</button>
+          <button type="button" class="chapter" id="exo-5">5</button>
+          <button type="button" class="chapter" id="exo-6">6</button>
+          <button type="button" class="chapter" id="exo-7">7</button>
+          <button type="button" class="chapter" id="exo-8">8</button>
+          <button type="button" class="chapter" id="exo-9">9</button>
+          <button type="button" class="chapter" id="exo-10">10</button>
+          <button type="button" class="chapter" id="exo-11">11</button>
+          <button type="button" class="chapter" id="exo-12">12</button>
+          <button type="button" class="chapter" id="exo-13">13</button>
+          <button type="button" class="chapter" id="exo-14">14</button>
+          <button type="button" class="chapter" id="exo-15">15</button>
+          <button type="button" class="chapter" id="exo-16">16</button>
+          <button type="button" class="chapter" id="exo-17">17</button>
+          <button type="button" class="chapter" id="exo-18">18</button>
+          <button type="button" class="chapter" id="exo-19">19</button>
+          <button type="button" class="chapter" id="exo-20">20</button>
+          <button type="button" class="chapter" id="exo-21">21</button>
+          <button type="button" class="chapter" id="exo-22">22</button>
+          <button type="button" class="chapter" id="exo-23">23</button>
+          <button type="button" class="chapter" id="exo-24">24</button>
+          <button type="button" class="chapter" id="exo-25">25</button>
+          <button type="button" class="chapter" id="exo-26">26</button>
+          <button type="button" class="chapter" id="exo-27">27</button>
+          <button type="button" class="chapter" id="exo-28">28</button>
+          <button type="button" class="chapter" id="exo-29">29</button>
+          <button type="button" class="chapter" id="exo-30">30</button>
+          <button type="button" class="chapter" id="exo-31">31</button>
+          <button type="button" class="chapter" id="exo-32">32</button>
+          <button type="button" class="chapter" id="exo-33">33</button>
+          <button type="button" class="chapter" id="exo-34">34</button>
+          <button type="button" class="chapter" id="exo-35">35</button>
+          <button type="button" class="chapter" id="exo-36">36</button>
+          <button type="button" class="chapter" id="exo-37">37</button>
+          <button type="button" class="chapter" id="exo-38">38</button>
+          <button type="button" class="chapter" id="exo-39">39</button>
+          <button type="button" class="chapter" id="exo-40">40</button>
         </div>
       </section>
 
@@ -1020,33 +1015,33 @@
         </button>
         <h1>Lévitique</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
+          <button type="button" class="chapter" id="lev-1">1</button>
+          <button type="button" class="chapter" id="lev-2">2</button>
+          <button type="button" class="chapter" id="lev-3">3</button>
+          <button type="button" class="chapter" id="lev-4">4</button>
+          <button type="button" class="chapter" id="lev-5">5</button>
+          <button type="button" class="chapter" id="lev-6">6</button>
+          <button type="button" class="chapter" id="lev-7">7</button>
+          <button type="button" class="chapter" id="lev-8">8</button>
+          <button type="button" class="chapter" id="lev-9">9</button>
+          <button type="button" class="chapter" id="lev-10">10</button>
+          <button type="button" class="chapter" id="lev-11">11</button>
+          <button type="button" class="chapter" id="lev-12">12</button>
+          <button type="button" class="chapter" id="lev-13">13</button>
+          <button type="button" class="chapter" id="lev-14">14</button>
+          <button type="button" class="chapter" id="lev-15">15</button>
+          <button type="button" class="chapter" id="lev-16">16</button>
+          <button type="button" class="chapter" id="lev-17">17</button>
+          <button type="button" class="chapter" id="lev-18">18</button>
+          <button type="button" class="chapter" id="lev-19">19</button>
+          <button type="button" class="chapter" id="lev-20">20</button>
+          <button type="button" class="chapter" id="lev-21">21</button>
+          <button type="button" class="chapter" id="lev-22">22</button>
+          <button type="button" class="chapter" id="lev-23">23</button>
+          <button type="button" class="chapter" id="lev-24">24</button>
+          <button type="button" class="chapter" id="lev-25">25</button>
+          <button type="button" class="chapter" id="lev-26">26</button>
+          <button type="button" class="chapter" id="lev-27">27</button>
         </div>
       </section>
 
@@ -1058,42 +1053,42 @@
         </button>
         <h1>Nombres</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
-          <button type="button" class="chapter">30</button>
-          <button type="button" class="chapter">31</button>
-          <button type="button" class="chapter">32</button>
-          <button type="button" class="chapter">33</button>
-          <button type="button" class="chapter">34</button>
-          <button type="button" class="chapter">35</button>
-          <button type="button" class="chapter">36</button>
+          <button type="button" class="chapter" id="nom-1">1</button>
+          <button type="button" class="chapter" id="nom-2">2</button>
+          <button type="button" class="chapter" id="nom-3">3</button>
+          <button type="button" class="chapter" id="nom-4">4</button>
+          <button type="button" class="chapter" id="nom-5">5</button>
+          <button type="button" class="chapter" id="nom-6">6</button>
+          <button type="button" class="chapter" id="nom-7">7</button>
+          <button type="button" class="chapter" id="nom-8">8</button>
+          <button type="button" class="chapter" id="nom-9">9</button>
+          <button type="button" class="chapter" id="nom-10">10</button>
+          <button type="button" class="chapter" id="nom-11">11</button>
+          <button type="button" class="chapter" id="nom-12">12</button>
+          <button type="button" class="chapter" id="nom-13">13</button>
+          <button type="button" class="chapter" id="nom-14">14</button>
+          <button type="button" class="chapter" id="nom-15">15</button>
+          <button type="button" class="chapter" id="nom-16">16</button>
+          <button type="button" class="chapter" id="nom-17">17</button>
+          <button type="button" class="chapter" id="nom-18">18</button>
+          <button type="button" class="chapter" id="nom-19">19</button>
+          <button type="button" class="chapter" id="nom-20">20</button>
+          <button type="button" class="chapter" id="nom-21">21</button>
+          <button type="button" class="chapter" id="nom-22">22</button>
+          <button type="button" class="chapter" id="nom-23">23</button>
+          <button type="button" class="chapter" id="nom-24">24</button>
+          <button type="button" class="chapter" id="nom-25">25</button>
+          <button type="button" class="chapter" id="nom-26">26</button>
+          <button type="button" class="chapter" id="nom-27">27</button>
+          <button type="button" class="chapter" id="nom-28">28</button>
+          <button type="button" class="chapter" id="nom-29">29</button>
+          <button type="button" class="chapter" id="nom-30">30</button>
+          <button type="button" class="chapter" id="nom-31">31</button>
+          <button type="button" class="chapter" id="nom-32">32</button>
+          <button type="button" class="chapter" id="nom-33">33</button>
+          <button type="button" class="chapter" id="nom-34">34</button>
+          <button type="button" class="chapter" id="nom-35">35</button>
+          <button type="button" class="chapter" id="nom-36">36</button>
         </div>
       </section>
 
@@ -1105,40 +1100,40 @@
         </button>
         <h1>Deutéronome</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
-          <button type="button" class="chapter">30</button>
-          <button type="button" class="chapter">31</button>
-          <button type="button" class="chapter">32</button>
-          <button type="button" class="chapter">33</button>
-          <button type="button" class="chapter">34</button>
+          <button type="button" class="chapter" id="deu-1">1</button>
+          <button type="button" class="chapter" id="deu-2">2</button>
+          <button type="button" class="chapter" id="deu-3">3</button>
+          <button type="button" class="chapter" id="deu-4">4</button>
+          <button type="button" class="chapter" id="deu-5">5</button>
+          <button type="button" class="chapter" id="deu-6">6</button>
+          <button type="button" class="chapter" id="deu-7">7</button>
+          <button type="button" class="chapter" id="deu-8">8</button>
+          <button type="button" class="chapter" id="deu-9">9</button>
+          <button type="button" class="chapter" id="deu-10">10</button>
+          <button type="button" class="chapter" id="deu-11">11</button>
+          <button type="button" class="chapter" id="deu-12">12</button>
+          <button type="button" class="chapter" id="deu-13">13</button>
+          <button type="button" class="chapter" id="deu-14">14</button>
+          <button type="button" class="chapter" id="deu-15">15</button>
+          <button type="button" class="chapter" id="deu-16">16</button>
+          <button type="button" class="chapter" id="deu-17">17</button>
+          <button type="button" class="chapter" id="deu-18">18</button>
+          <button type="button" class="chapter" id="deu-19">19</button>
+          <button type="button" class="chapter" id="deu-20">20</button>
+          <button type="button" class="chapter" id="deu-21">21</button>
+          <button type="button" class="chapter" id="deu-22">22</button>
+          <button type="button" class="chapter" id="deu-23">23</button>
+          <button type="button" class="chapter" id="deu-24">24</button>
+          <button type="button" class="chapter" id="deu-25">25</button>
+          <button type="button" class="chapter" id="deu-26">26</button>
+          <button type="button" class="chapter" id="deu-27">27</button>
+          <button type="button" class="chapter" id="deu-28">28</button>
+          <button type="button" class="chapter" id="deu-29">29</button>
+          <button type="button" class="chapter" id="deu-30">30</button>
+          <button type="button" class="chapter" id="deu-31">31</button>
+          <button type="button" class="chapter" id="deu-32">32</button>
+          <button type="button" class="chapter" id="deu-33">33</button>
+          <button type="button" class="chapter" id="deu-34">34</button>
         </div>
       </section>
 
@@ -1150,30 +1145,30 @@
         </button>
         <h1>Josué</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
+          <button type="button" class="chapter" id="jos-1">1</button>
+          <button type="button" class="chapter" id="jos-2">2</button>
+          <button type="button" class="chapter" id="jos-3">3</button>
+          <button type="button" class="chapter" id="jos-4">4</button>
+          <button type="button" class="chapter" id="jos-5">5</button>
+          <button type="button" class="chapter" id="jos-6">6</button>
+          <button type="button" class="chapter" id="jos-7">7</button>
+          <button type="button" class="chapter" id="jos-8">8</button>
+          <button type="button" class="chapter" id="jos-9">9</button>
+          <button type="button" class="chapter" id="jos-10">10</button>
+          <button type="button" class="chapter" id="jos-11">11</button>
+          <button type="button" class="chapter" id="jos-12">12</button>
+          <button type="button" class="chapter" id="jos-13">13</button>
+          <button type="button" class="chapter" id="jos-14">14</button>
+          <button type="button" class="chapter" id="jos-15">15</button>
+          <button type="button" class="chapter" id="jos-16">16</button>
+          <button type="button" class="chapter" id="jos-17">17</button>
+          <button type="button" class="chapter" id="jos-18">18</button>
+          <button type="button" class="chapter" id="jos-19">19</button>
+          <button type="button" class="chapter" id="jos-20">20</button>
+          <button type="button" class="chapter" id="jos-21">21</button>
+          <button type="button" class="chapter" id="jos-22">22</button>
+          <button type="button" class="chapter" id="jos-23">23</button>
+          <button type="button" class="chapter" id="jos-24">24</button>
         </div>
       </section>
 
@@ -1185,27 +1180,27 @@
         </button>
         <h1>Juges</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
+          <button type="button" class="chapter" id="jug-1">1</button>
+          <button type="button" class="chapter" id="jug-2">2</button>
+          <button type="button" class="chapter" id="jug-3">3</button>
+          <button type="button" class="chapter" id="jug-4">4</button>
+          <button type="button" class="chapter" id="jug-5">5</button>
+          <button type="button" class="chapter" id="jug-6">6</button>
+          <button type="button" class="chapter" id="jug-7">7</button>
+          <button type="button" class="chapter" id="jug-8">8</button>
+          <button type="button" class="chapter" id="jug-9">9</button>
+          <button type="button" class="chapter" id="jug-10">10</button>
+          <button type="button" class="chapter" id="jug-11">11</button>
+          <button type="button" class="chapter" id="jug-12">12</button>
+          <button type="button" class="chapter" id="jug-13">13</button>
+          <button type="button" class="chapter" id="jug-14">14</button>
+          <button type="button" class="chapter" id="jug-15">15</button>
+          <button type="button" class="chapter" id="jug-16">16</button>
+          <button type="button" class="chapter" id="jug-17">17</button>
+          <button type="button" class="chapter" id="jug-18">18</button>
+          <button type="button" class="chapter" id="jug-19">19</button>
+          <button type="button" class="chapter" id="jug-20">20</button>
+          <button type="button" class="chapter" id="jug-21">21</button>
         </div>
       </section>
 
@@ -1217,10 +1212,10 @@
         </button>
         <h1>Ruth</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
+          <button type="button" class="chapter" id="rut-1">1</button>
+          <button type="button" class="chapter" id="rut-2">2</button>
+          <button type="button" class="chapter" id="rut-3">3</button>
+          <button type="button" class="chapter" id="rut-4">4</button>
         </div>
       </section>
 
@@ -1232,32 +1227,32 @@
         </button>
         <h1>1 Samuel</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
+          <button type="button" class="chapter" id="1sa-1">1</button>
+          <button type="button" class="chapter" id="1sa-2">2</button>
+          <button type="button" class="chapter" id="1sa-3">3</button>
+          <button type="button" class="chapter" id="1sa-4">4</button>
+          <button type="button" class="chapter" id="1sa-5">5</button>
+          <button type="button" class="chapter" id="1sa-6">6</button>
+          <button type="button" class="chapter" id="1sa-7">7</button>
+          <button type="button" class="chapter" id="1sa-8">8</button>
+          <button type="button" class="chapter" id="1sa-9">9</button>
+          <button type="button" class="chapter" id="1sa-10">10</button>
+          <button type="button" class="chapter" id="1sa-11">11</button>
+          <button type="button" class="chapter" id="1sa-12">12</button>
+          <button type="button" class="chapter" id="1sa-13">13</button>
+          <button type="button" class="chapter" id="1sa-14">14</button>
+          <button type="button" class="chapter" id="1sa-15">15</button>
+          <button type="button" class="chapter" id="1sa-16">16</button>
+          <button type="button" class="chapter" id="1sa-17">17</button>
+          <button type="button" class="chapter" id="1sa-18">18</button>
+          <button type="button" class="chapter" id="1sa-19">19</button>
+          <button type="button" class="chapter" id="1sa-20">20</button>
+          <button type="button" class="chapter" id="1sa-21">21</button>
+          <button type="button" class="chapter" id="1sa-22">22</button>
+          <button type="button" class="chapter" id="1sa-23">23</button>
+          <button type="button" class="chapter" id="1sa-24">24</button>
+          <button type="button" class="chapter" id="1sa-25">25</button>
+          <button type="button" class="chapter" id="1sa-26">26</button>
           <button type="button" class="chapter">27</button>
           <button type="button" class="chapter">28</button>
           <button type="button" class="chapter">29</button>
@@ -1274,30 +1269,30 @@
         </button>
         <h1>2 Samuel</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
+          <button type="button" class="chapter" id="2sa-1">1</button>
+          <button type="button" class="chapter" id="2sa-2">2</button>
+          <button type="button" class="chapter" id="2sa-3">3</button>
+          <button type="button" class="chapter" id="2sa-4">4</button>
+          <button type="button" class="chapter" id="2sa-5">5</button>
+          <button type="button" class="chapter" id="2sa-6">6</button>
+          <button type="button" class="chapter" id="2sa-7">7</button>
+          <button type="button" class="chapter" id="2sa-8">8</button>
+          <button type="button" class="chapter" id="2sa-9">9</button>
+          <button type="button" class="chapter" id="2sa-10">10</button>
+          <button type="button" class="chapter" id="2sa-11">11</button>
+          <button type="button" class="chapter" id="2sa-12">12</button>
+          <button type="button" class="chapter" id="2sa-13">13</button>
+          <button type="button" class="chapter" id="2sa-14">14</button>
+          <button type="button" class="chapter" id="2sa-15">15</button>
+          <button type="button" class="chapter" id="2sa-16">16</button>
+          <button type="button" class="chapter" id="2sa-17">17</button>
+          <button type="button" class="chapter" id="2sa-18">18</button>
+          <button type="button" class="chapter" id="2sa-19">19</button>
+          <button type="button" class="chapter" id="2sa-20">20</button>
+          <button type="button" class="chapter" id="2sa-21">21</button>
+          <button type="button" class="chapter" id="2sa-22">22</button>
+          <button type="button" class="chapter" id="2sa-23">23</button>
+          <button type="button" class="chapter" id="2sa-24">24</button>
         </div>
       </section>
 
@@ -1309,28 +1304,28 @@
         </button>
         <h1>1 Rois</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
+          <button type="button" class="chapter" id="1ro-1">1</button>
+          <button type="button" class="chapter" id="1ro-2">2</button>
+          <button type="button" class="chapter" id="1ro-3">3</button>
+          <button type="button" class="chapter" id="1ro-4">4</button>
+          <button type="button" class="chapter" id="1ro-5">5</button>
+          <button type="button" class="chapter" id="1ro-6">6</button>
+          <button type="button" class="chapter" id="1ro-7">7</button>
+          <button type="button" class="chapter" id="1ro-8">8</button>
+          <button type="button" class="chapter" id="1ro-9">9</button>
+          <button type="button" class="chapter" id="1ro-10">10</button>
+          <button type="button" class="chapter" id="1ro-11">11</button>
+          <button type="button" class="chapter" id="1ro-12">12</button>
+          <button type="button" class="chapter" id="1ro-13">13</button>
+          <button type="button" class="chapter" id="1ro-14">14</button>
+          <button type="button" class="chapter" id="1ro-15">15</button>
+          <button type="button" class="chapter" id="1ro-16">16</button>
+          <button type="button" class="chapter" id="1ro-17">17</button>
+          <button type="button" class="chapter" id="1ro-18">18</button>
+          <button type="button" class="chapter" id="1ro-19">19</button>
+          <button type="button" class="chapter" id="1ro-20">20</button>
+          <button type="button" class="chapter" id="1ro-21">21</button>
+          <button type="button" class="chapter" id="1ro-22">22</button>
         </div>
       </section>
 
@@ -1342,31 +1337,31 @@
         </button>
         <h1>2 Rois</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
+          <button type="button" class="chapter" id="2ro-1">1</button>
+          <button type="button" class="chapter" id="2ro-2">2</button>
+          <button type="button" class="chapter" id="2ro-3">3</button>
+          <button type="button" class="chapter" id="2ro-4">4</button>
+          <button type="button" class="chapter" id="2ro-5">5</button>
+          <button type="button" class="chapter" id="2ro-6">6</button>
+          <button type="button" class="chapter" id="2ro-7">7</button>
+          <button type="button" class="chapter" id="2ro-8">8</button>
+          <button type="button" class="chapter" id="2ro-9">9</button>
+          <button type="button" class="chapter" id="2ro-10">10</button>
+          <button type="button" class="chapter" id="2ro-11">11</button>
+          <button type="button" class="chapter" id="2ro-12">12</button>
+          <button type="button" class="chapter" id="2ro-13">13</button>
+          <button type="button" class="chapter" id="2ro-14">14</button>
+          <button type="button" class="chapter" id="2ro-15">15</button>
+          <button type="button" class="chapter" id="2ro-16">16</button>
+          <button type="button" class="chapter" id="2ro-17">17</button>
+          <button type="button" class="chapter" id="2ro-18">18</button>
+          <button type="button" class="chapter" id="2ro-19">19</button>
+          <button type="button" class="chapter" id="2ro-20">20</button>
+          <button type="button" class="chapter" id="2ro-21">21</button>
+          <button type="button" class="chapter" id="2ro-22">22</button>
+          <button type="button" class="chapter" id="2ro-23">23</button>
+          <button type="button" class="chapter" id="2ro-24">24</button>
+          <button type="button" class="chapter" id="2ro-25">25</button>
         </div>
       </section>
 
@@ -1378,35 +1373,35 @@
         </button>
         <h1>1 Chroniques</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
+          <button type="button" class="chapter" id="1ch-1">1</button>
+          <button type="button" class="chapter" id="1ch-2">2</button>
+          <button type="button" class="chapter" id="1ch-3">3</button>
+          <button type="button" class="chapter" id="1ch-4">4</button>
+          <button type="button" class="chapter" id="1ch-5">5</button>
+          <button type="button" class="chapter" id="1ch-6">6</button>
+          <button type="button" class="chapter" id="1ch-7">7</button>
+          <button type="button" class="chapter" id="1ch-8">8</button>
+          <button type="button" class="chapter" id="1ch-9">9</button>
+          <button type="button" class="chapter" id="1ch-10">10</button>
+          <button type="button" class="chapter" id="1ch-11">11</button>
+          <button type="button" class="chapter" id="1ch-12">12</button>
+          <button type="button" class="chapter" id="1ch-13">13</button>
+          <button type="button" class="chapter" id="1ch-14">14</button>
+          <button type="button" class="chapter" id="1ch-15">15</button>
+          <button type="button" class="chapter" id="1ch-16">16</button>
+          <button type="button" class="chapter" id="1ch-17">17</button>
+          <button type="button" class="chapter" id="1ch-18">18</button>
+          <button type="button" class="chapter" id="1ch-19">19</button>
+          <button type="button" class="chapter" id="1ch-20">20</button>
+          <button type="button" class="chapter" id="1ch-21">21</button>
+          <button type="button" class="chapter" id="1ch-22">22</button>
+          <button type="button" class="chapter" id="1ch-23">23</button>
+          <button type="button" class="chapter" id="1ch-24">24</button>
+          <button type="button" class="chapter" id="1ch-25">25</button>
+          <button type="button" class="chapter" id="1ch-26">26</button>
+          <button type="button" class="chapter" id="1ch-27">27</button>
+          <button type="button" class="chapter" id="1ch-28">28</button>
+          <button type="button" class="chapter" id="1ch-29">29</button>
         </div>
       </section>
 
@@ -1418,42 +1413,42 @@
         </button>
         <h1>2 Chroniques</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
-          <button type="button" class="chapter">30</button>
-          <button type="button" class="chapter">31</button>
-          <button type="button" class="chapter">32</button>
-          <button type="button" class="chapter">33</button>
-          <button type="button" class="chapter">34</button>
-          <button type="button" class="chapter">35</button>
-          <button type="button" class="chapter">36</button>
+          <button type="button" class="chapter" id="2ch-1">1</button>
+          <button type="button" class="chapter" id="2ch-2">2</button>
+          <button type="button" class="chapter" id="2ch-3">3</button>
+          <button type="button" class="chapter" id="2ch-4">4</button>
+          <button type="button" class="chapter" id="2ch-5">5</button>
+          <button type="button" class="chapter" id="2ch-6">6</button>
+          <button type="button" class="chapter" id="2ch-7">7</button>
+          <button type="button" class="chapter" id="2ch-8">8</button>
+          <button type="button" class="chapter" id="2ch-9">9</button>
+          <button type="button" class="chapter" id="2ch-10">10</button>
+          <button type="button" class="chapter" id="2ch-11">11</button>
+          <button type="button" class="chapter" id="2ch-12">12</button>
+          <button type="button" class="chapter" id="2ch-13">13</button>
+          <button type="button" class="chapter" id="2ch-14">14</button>
+          <button type="button" class="chapter" id="2ch-15">15</button>
+          <button type="button" class="chapter" id="2ch-16">16</button>
+          <button type="button" class="chapter" id="2ch-17">17</button>
+          <button type="button" class="chapter" id="2ch-18">18</button>
+          <button type="button" class="chapter" id="2ch-19">19</button>
+          <button type="button" class="chapter" id="2ch-20">20</button>
+          <button type="button" class="chapter" id="2ch-21">21</button>
+          <button type="button" class="chapter" id="2ch-22">22</button>
+          <button type="button" class="chapter" id="2ch-23">23</button>
+          <button type="button" class="chapter" id="2ch-24">24</button>
+          <button type="button" class="chapter" id="2ch-25">25</button>
+          <button type="button" class="chapter" id="2ch-26">26</button>
+          <button type="button" class="chapter" id="2ch-27">27</button>
+          <button type="button" class="chapter" id="2ch-28">28</button>
+          <button type="button" class="chapter" id="2ch-29">29</button>
+          <button type="button" class="chapter" id="2ch-30">30</button>
+          <button type="button" class="chapter" id="2ch-31">31</button>
+          <button type="button" class="chapter" id="2ch-32">32</button>
+          <button type="button" class="chapter" id="2ch-33">33</button>
+          <button type="button" class="chapter" id="2ch-34">34</button>
+          <button type="button" class="chapter" id="2ch-35">35</button>
+          <button type="button" class="chapter" id="2ch-36">36</button>
         </div>
       </section>
 
@@ -1465,16 +1460,16 @@
         </button>
         <h1>Esdras</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
+          <button type="button" class="chapter" id="esd-1">1</button>
+          <button type="button" class="chapter" id="esd-2">2</button>
+          <button type="button" class="chapter" id="esd-3">3</button>
+          <button type="button" class="chapter" id="esd-4">4</button>
+          <button type="button" class="chapter" id="esd-5">5</button>
+          <button type="button" class="chapter" id="esd-6">6</button>
+          <button type="button" class="chapter" id="esd-7">7</button>
+          <button type="button" class="chapter" id="esd-8">8</button>
+          <button type="button" class="chapter" id="esd-9">9</button>
+          <button type="button" class="chapter" id="esd-10">10</button>
         </div>
       </section>
 
@@ -1486,19 +1481,19 @@
         </button>
         <h1>Néhémie</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
+          <button type="button" class="chapter" id="neh-1">1</button>
+          <button type="button" class="chapter" id="neh-2">2</button>
+          <button type="button" class="chapter" id="neh-3">3</button>
+          <button type="button" class="chapter" id="neh-4">4</button>
+          <button type="button" class="chapter" id="neh-5">5</button>
+          <button type="button" class="chapter" id="neh-6">6</button>
+          <button type="button" class="chapter" id="neh-7">7</button>
+          <button type="button" class="chapter" id="neh-8">8</button>
+          <button type="button" class="chapter" id="neh-9">9</button>
+          <button type="button" class="chapter" id="neh-10">10</button>
+          <button type="button" class="chapter" id="neh-11">11</button>
+          <button type="button" class="chapter" id="neh-12">12</button>
+          <button type="button" class="chapter" id="neh-13">13</button>
         </div>
       </section>
 
@@ -1510,16 +1505,16 @@
         </button>
         <h1>Esther</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
+          <button type="button" class="chapter" id="est-1">1</button>
+          <button type="button" class="chapter" id="est-2">2</button>
+          <button type="button" class="chapter" id="est-3">3</button>
+          <button type="button" class="chapter" id="est-4">4</button>
+          <button type="button" class="chapter" id="est-5">5</button>
+          <button type="button" class="chapter" id="est-6">6</button>
+          <button type="button" class="chapter" id="est-7">7</button>
+          <button type="button" class="chapter" id="est-8">8</button>
+          <button type="button" class="chapter" id="est-9">9</button>
+          <button type="button" class="chapter" id="est-10">10</button>
         </div>
       </section>
 
@@ -1531,48 +1526,48 @@
         </button>
         <h1>Job</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
-          <button type="button" class="chapter">30</button>
-          <button type="button" class="chapter">31</button>
-          <button type="button" class="chapter">32</button>
-          <button type="button" class="chapter">33</button>
-          <button type="button" class="chapter">34</button>
-          <button type="button" class="chapter">35</button>
-          <button type="button" class="chapter">36</button>
-          <button type="button" class="chapter">37</button>
-          <button type="button" class="chapter">38</button>
-          <button type="button" class="chapter">39</button>
-          <button type="button" class="chapter">40</button>
-          <button type="button" class="chapter">41</button>
-          <button type="button" class="chapter">42</button>
+          <button type="button" class="chapter" id="job-1">1</button>
+          <button type="button" class="chapter" id="job-2">2</button>
+          <button type="button" class="chapter" id="job-3">3</button>
+          <button type="button" class="chapter" id="job-4">4</button>
+          <button type="button" class="chapter" id="job-5">5</button>
+          <button type="button" class="chapter" id="job-6">6</button>
+          <button type="button" class="chapter" id="job-7">7</button>
+          <button type="button" class="chapter" id="job-8">8</button>
+          <button type="button" class="chapter" id="job-9">9</button>
+          <button type="button" class="chapter" id="job-10">10</button>
+          <button type="button" class="chapter" id="job-11">11</button>
+          <button type="button" class="chapter" id="job-12">12</button>
+          <button type="button" class="chapter" id="job-13">13</button>
+          <button type="button" class="chapter" id="job-14">14</button>
+          <button type="button" class="chapter" id="job-15">15</button>
+          <button type="button" class="chapter" id="job-16">16</button>
+          <button type="button" class="chapter" id="job-17">17</button>
+          <button type="button" class="chapter" id="job-18">18</button>
+          <button type="button" class="chapter" id="job-19">19</button>
+          <button type="button" class="chapter" id="job-20">20</button>
+          <button type="button" class="chapter" id="job-21">21</button>
+          <button type="button" class="chapter" id="job-22">22</button>
+          <button type="button" class="chapter" id="job-23">23</button>
+          <button type="button" class="chapter" id="job-24">24</button>
+          <button type="button" class="chapter" id="job-25">25</button>
+          <button type="button" class="chapter" id="job-26">26</button>
+          <button type="button" class="chapter" id="job-27">27</button>
+          <button type="button" class="chapter" id="job-28">28</button>
+          <button type="button" class="chapter" id="job-29">29</button>
+          <button type="button" class="chapter" id="job-30">30</button>
+          <button type="button" class="chapter" id="job-31">31</button>
+          <button type="button" class="chapter" id="job-32">32</button>
+          <button type="button" class="chapter" id="job-33">33</button>
+          <button type="button" class="chapter" id="job-34">34</button>
+          <button type="button" class="chapter" id="job-35">35</button>
+          <button type="button" class="chapter" id="job-36">36</button>
+          <button type="button" class="chapter" id="job-37">37</button>
+          <button type="button" class="chapter" id="job-38">38</button>
+          <button type="button" class="chapter" id="job-39">39</button>
+          <button type="button" class="chapter" id="job-40">40</button>
+          <button type="button" class="chapter" id="job-41">41</button>
+          <button type="button" class="chapter" id="job-42">42</button>
         </div>
       </section>
 
@@ -1584,156 +1579,156 @@
         </button>
         <h1>Psaumes</h1>
         <div class="chapters">
-          <button type="button" class="chapter">1</button>
-          <button type="button" class="chapter">2</button>
-          <button type="button" class="chapter">3</button>
-          <button type="button" class="chapter">4</button>
-          <button type="button" class="chapter">5</button>
-          <button type="button" class="chapter">6</button>
-          <button type="button" class="chapter">7</button>
-          <button type="button" class="chapter">8</button>
-          <button type="button" class="chapter">9</button>
-          <button type="button" class="chapter">10</button>
-          <button type="button" class="chapter">11</button>
-          <button type="button" class="chapter">12</button>
-          <button type="button" class="chapter">13</button>
-          <button type="button" class="chapter">14</button>
-          <button type="button" class="chapter">15</button>
-          <button type="button" class="chapter">16</button>
-          <button type="button" class="chapter">17</button>
-          <button type="button" class="chapter">18</button>
-          <button type="button" class="chapter">19</button>
-          <button type="button" class="chapter">20</button>
-          <button type="button" class="chapter">21</button>
-          <button type="button" class="chapter">22</button>
-          <button type="button" class="chapter">23</button>
-          <button type="button" class="chapter">24</button>
-          <button type="button" class="chapter">25</button>
-          <button type="button" class="chapter">26</button>
-          <button type="button" class="chapter">27</button>
-          <button type="button" class="chapter">28</button>
-          <button type="button" class="chapter">29</button>
-          <button type="button" class="chapter">30</button>
-          <button type="button" class="chapter">31</button>
-          <button type="button" class="chapter">32</button>
-          <button type="button" class="chapter">33</button>
-          <button type="button" class="chapter">34</button>
-          <button type="button" class="chapter">35</button>
-          <button type="button" class="chapter">36</button>
-          <button type="button" class="chapter">37</button>
-          <button type="button" class="chapter">38</button>
-          <button type="button" class="chapter">39</button>
-          <button type="button" class="chapter">40</button>
-          <button type="button" class="chapter">41</button>
-          <button type="button" class="chapter">42</button>
-          <button type="button" class="chapter">43</button>
-          <button type="button" class="chapter">44</button>
-          <button type="button" class="chapter">45</button>
-          <button type="button" class="chapter">46</button>
-          <button type="button" class="chapter">47</button>
-          <button type="button" class="chapter">48</button>
-          <button type="button" class="chapter">49</button>
-          <button type="button" class="chapter">50</button>
-          <button type="button" class="chapter">51</button>
-          <button type="button" class="chapter">52</button>
-          <button type="button" class="chapter">53</button>
-          <button type="button" class="chapter">54</button>
-          <button type="button" class="chapter">55</button>
-          <button type="button" class="chapter">56</button>
-          <button type="button" class="chapter">57</button>
-          <button type="button" class="chapter">58</button>
-          <button type="button" class="chapter">59</button>
-          <button type="button" class="chapter">60</button>
-          <button type="button" class="chapter">61</button>
-          <button type="button" class="chapter">62</button>
-          <button type="button" class="chapter">63</button>
-          <button type="button" class="chapter">64</button>
-          <button type="button" class="chapter">65</button>
-          <button type="button" class="chapter">66</button>
-          <button type="button" class="chapter">67</button>
-          <button type="button" class="chapter">68</button>
-          <button type="button" class="chapter">69</button>
-          <button type="button" class="chapter">70</button>
-          <button type="button" class="chapter">71</button>
-          <button type="button" class="chapter">72</button>
-          <button type="button" class="chapter">73</button>
-          <button type="button" class="chapter">74</button>
-          <button type="button" class="chapter">75</button>
-          <button type="button" class="chapter">76</button>
-          <button type="button" class="chapter">77</button>
-          <button type="button" class="chapter">78</button>
-          <button type="button" class="chapter">79</button>
-          <button type="button" class="chapter">80</button>
-          <button type="button" class="chapter">81</button>
-          <button type="button" class="chapter">82</button>
-          <button type="button" class="chapter">83</button>
-          <button type="button" class="chapter">84</button>
-          <button type="button" class="chapter">85</button>
-          <button type="button" class="chapter">86</button>
-          <button type="button" class="chapter">87</button>
-          <button type="button" class="chapter">88</button>
-          <button type="button" class="chapter">89</button>
-          <button type="button" class="chapter">90</button>
-          <button type="button" class="chapter">91</button>
-          <button type="button" class="chapter">92</button>
-          <button type="button" class="chapter">93</button>
-          <button type="button" class="chapter">94</button>
-          <button type="button" class="chapter">95</button>
-          <button type="button" class="chapter">96</button>
-          <button type="button" class="chapter">97</button>
-          <button type="button" class="chapter">98</button>
-          <button type="button" class="chapter">99</button>
-          <button type="button" class="chapter">100</button>
-          <button type="button" class="chapter">101</button>
-          <button type="button" class="chapter">102</button>
-          <button type="button" class="chapter">103</button>
-          <button type="button" class="chapter">104</button>
-          <button type="button" class="chapter">105</button>
-          <button type="button" class="chapter">106</button>
-          <button type="button" class="chapter">107</button>
-          <button type="button" class="chapter">108</button>
-          <button type="button" class="chapter">109</button>
-          <button type="button" class="chapter">110</button>
-          <button type="button" class="chapter">111</button>
-          <button type="button" class="chapter">112</button>
-          <button type="button" class="chapter">113</button>
-          <button type="button" class="chapter">114</button>
-          <button type="button" class="chapter">115</button>
-          <button type="button" class="chapter">116</button>
-          <button type="button" class="chapter">117</button>
-          <button type="button" class="chapter">118</button>
-          <button type="button" class="chapter">119</button>
-          <button type="button" class="chapter">120</button>
-          <button type="button" class="chapter">121</button>
-          <button type="button" class="chapter">122</button>
-          <button type="button" class="chapter">123</button>
-          <button type="button" class="chapter">124</button>
-          <button type="button" class="chapter">125</button>
-          <button type="button" class="chapter">126</button>
-          <button type="button" class="chapter">127</button>
-          <button type="button" class="chapter">128</button>
-          <button type="button" class="chapter">129</button>
-          <button type="button" class="chapter">130</button>
-          <button type="button" class="chapter">131</button>
-          <button type="button" class="chapter">132</button>
-          <button type="button" class="chapter">133</button>
-          <button type="button" class="chapter">134</button>
-          <button type="button" class="chapter">135</button>
-          <button type="button" class="chapter">136</button>
-          <button type="button" class="chapter">137</button>
-          <button type="button" class="chapter">138</button>
-          <button type="button" class="chapter">139</button>
-          <button type="button" class="chapter">140</button>
-          <button type="button" class="chapter">141</button>
-          <button type="button" class="chapter">142</button>
-          <button type="button" class="chapter">143</button>
-          <button type="button" class="chapter">144</button>
-          <button type="button" class="chapter">145</button>
-          <button type="button" class="chapter">146</button>
-          <button type="button" class="chapter">147</button>
-          <button type="button" class="chapter">148</button>
-          <button type="button" class="chapter">149</button>
-          <button type="button" class="chapter">150</button>
+          <button type="button" class="chapter" id="psa-1">1</button>
+          <button type="button" class="chapter" id="psa-2">2</button>
+          <button type="button" class="chapter" id="psa-3">3</button>
+          <button type="button" class="chapter" id="psa-4">4</button>
+          <button type="button" class="chapter" id="psa-5">5</button>
+          <button type="button" class="chapter" id="psa-6">6</button>
+          <button type="button" class="chapter" id="psa-7">7</button>
+          <button type="button" class="chapter" id="psa-8">8</button>
+          <button type="button" class="chapter" id="psa-9">9</button>
+          <button type="button" class="chapter" id="psa-10">10</button>
+          <button type="button" class="chapter" id="psa-11">11</button>
+          <button type="button" class="chapter" id="psa-12">12</button>
+          <button type="button" class="chapter" id="psa-13">13</button>
+          <button type="button" class="chapter" id="psa-14">14</button>
+          <button type="button" class="chapter" id="psa-15">15</button>
+          <button type="button" class="chapter" id="psa-16">16</button>
+          <button type="button" class="chapter" id="psa-17">17</button>
+          <button type="button" class="chapter" id="psa-18">18</button>
+          <button type="button" class="chapter" id="psa-19">19</button>
+          <button type="button" class="chapter" id="psa-20">20</button>
+          <button type="button" class="chapter" id="psa-21">21</button>
+          <button type="button" class="chapter" id="psa-22">22</button>
+          <button type="button" class="chapter" id="psa-23">23</button>
+          <button type="button" class="chapter" id="psa-24">24</button>
+          <button type="button" class="chapter" id="psa-25">25</button>
+          <button type="button" class="chapter" id="psa-26">26</button>
+          <button type="button" class="chapter" id="psa-27">27</button>
+          <button type="button" class="chapter" id="psa-28">28</button>
+          <button type="button" class="chapter" id="psa-29">29</button>
+          <button type="button" class="chapter" id="psa-30">30</button>
+          <button type="button" class="chapter" id="psa-31">31</button>
+          <button type="button" class="chapter" id="psa-32">32</button>
+          <button type="button" class="chapter" id="psa-33">33</button>
+          <button type="button" class="chapter" id="psa-34">34</button>
+          <button type="button" class="chapter" id="psa-35">35</button>
+          <button type="button" class="chapter" id="psa-36">36</button>
+          <button type="button" class="chapter" id="psa-37">37</button>
+          <button type="button" class="chapter" id="psa-38">38</button>
+          <button type="button" class="chapter" id="psa-39">39</button>
+          <button type="button" class="chapter" id="psa-40">40</button>
+          <button type="button" class="chapter" id="psa-41">41</button>
+          <button type="button" class="chapter" id="psa-42">42</button>
+          <button type="button" class="chapter" id="psa-43">43</button>
+          <button type="button" class="chapter" id="psa-44">44</button>
+          <button type="button" class="chapter" id="psa-45">45</button>
+          <button type="button" class="chapter" id="psa-46">46</button>
+          <button type="button" class="chapter" id="psa-47">47</button>
+          <button type="button" class="chapter" id="psa-48">48</button>
+          <button type="button" class="chapter" id="psa-49">49</button>
+          <button type="button" class="chapter" id="psa-50">50</button>
+          <button type="button" class="chapter" id="psa-51">51</button>
+          <button type="button" class="chapter" id="psa-52">52</button>
+          <button type="button" class="chapter" id="psa-53">53</button>
+          <button type="button" class="chapter" id="psa-54">54</button>
+          <button type="button" class="chapter" id="psa-55">55</button>
+          <button type="button" class="chapter" id="psa-56">56</button>
+          <button type="button" class="chapter" id="psa-57">57</button>
+          <button type="button" class="chapter" id="psa-58">58</button>
+          <button type="button" class="chapter" id="psa-59">59</button>
+          <button type="button" class="chapter" id="psa-60">60</button>
+          <button type="button" class="chapter" id="psa-61">61</button>
+          <button type="button" class="chapter" id="psa-62">62</button>
+          <button type="button" class="chapter" id="psa-63">63</button>
+          <button type="button" class="chapter" id="psa-64">64</button>
+          <button type="button" class="chapter" id="psa-65">65</button>
+          <button type="button" class="chapter" id="psa-66">66</button>
+          <button type="button" class="chapter" id="psa-67">67</button>
+          <button type="button" class="chapter" id="psa-68">68</button>
+          <button type="button" class="chapter" id="psa-69">69</button>
+          <button type="button" class="chapter" id="psa-70">70</button>
+          <button type="button" class="chapter" id="psa-71">71</button>
+          <button type="button" class="chapter" id="psa-72">72</button>
+          <button type="button" class="chapter" id="psa-73">73</button>
+          <button type="button" class="chapter" id="psa-74">74</button>
+          <button type="button" class="chapter" id="psa-75">75</button>
+          <button type="button" class="chapter" id="psa-76">76</button>
+          <button type="button" class="chapter" id="psa-77">77</button>
+          <button type="button" class="chapter" id="psa-78">78</button>
+          <button type="button" class="chapter" id="psa-79">79</button>
+          <button type="button" class="chapter" id="psa-80">80</button>
+          <button type="button" class="chapter" id="psa-81">81</button>
+          <button type="button" class="chapter" id="psa-82">82</button>
+          <button type="button" class="chapter" id="psa-83">83</button>
+          <button type="button" class="chapter" id="psa-84">84</button>
+          <button type="button" class="chapter" id="psa-85">85</button>
+          <button type="button" class="chapter" id="psa-86">86</button>
+          <button type="button" class="chapter" id="psa-87">87</button>
+          <button type="button" class="chapter" id="psa-88">88</button>
+          <button type="button" class="chapter" id="psa-89">89</button>
+          <button type="button" class="chapter" id="psa-90">90</button>
+          <button type="button" class="chapter" id="psa-91">91</button>
+          <button type="button" class="chapter" id="psa-92">92</button>
+          <button type="button" class="chapter" id="psa-93">93</button>
+          <button type="button" class="chapter" id="psa-94">94</button>
+          <button type="button" class="chapter" id="psa-95">95</button>
+          <button type="button" class="chapter" id="psa-96">96</button>
+          <button type="button" class="chapter" id="psa-97">97</button>
+          <button type="button" class="chapter" id="psa-98">98</button>
+          <button type="button" class="chapter" id="psa-99">99</button>
+          <button type="button" class="chapter" id="psa-100">100</button>
+          <button type="button" class="chapter" id="psa-101">101</button>
+          <button type="button" class="chapter" id="psa-102">102</button>
+          <button type="button" class="chapter" id="psa-103">103</button>
+          <button type="button" class="chapter" id="psa-104">104</button>
+          <button type="button" class="chapter" id="psa-105">105</button>
+          <button type="button" class="chapter" id="psa-106">106</button>
+          <button type="button" class="chapter" id="psa-107">107</button>
+          <button type="button" class="chapter" id="psa-108">108</button>
+          <button type="button" class="chapter" id="psa-109">109</button>
+          <button type="button" class="chapter" id="psa-110">110</button>
+          <button type="button" class="chapter" id="psa-111">111</button>
+          <button type="button" class="chapter" id="psa-112">112</button>
+          <button type="button" class="chapter" id="psa-113">113</button>
+          <button type="button" class="chapter" id="psa-114">114</button>
+          <button type="button" class="chapter" id="psa-115">115</button>
+          <button type="button" class="chapter" id="psa-116">116</button>
+          <button type="button" class="chapter" id="psa-117">117</button>
+          <button type="button" class="chapter" id="psa-118">118</button>
+          <button type="button" class="chapter" id="psa-119">119</button>
+          <button type="button" class="chapter" id="psa-120">120</button>
+          <button type="button" class="chapter" id="psa-121">121</button>
+          <button type="button" class="chapter" id="psa-122">122</button>
+          <button type="button" class="chapter" id="psa-123">123</button>
+          <button type="button" class="chapter" id="psa-124">124</button>
+          <button type="button" class="chapter" id="psa-125">125</button>
+          <button type="button" class="chapter" id="psa-126">126</button>
+          <button type="button" class="chapter" id="psa-127">127</button>
+          <button type="button" class="chapter" id="psa-128">128</button>
+          <button type="button" class="chapter" id="psa-129">129</button>
+          <button type="button" class="chapter" id="psa-130">130</button>
+          <button type="button" class="chapter" id="psa-131">131</button>
+          <button type="button" class="chapter" id="psa-132">132</button>
+          <button type="button" class="chapter" id="psa-133">133</button>
+          <button type="button" class="chapter" id="psa-134">134</button>
+          <button type="button" class="chapter" id="psa-135">135</button>
+          <button type="button" class="chapter" id="psa-136">136</button>
+          <button type="button" class="chapter" id="psa-137">137</button>
+          <button type="button" class="chapter" id="psa-138">138</button>
+          <button type="button" class="chapter" id="psa-139">139</button>
+          <button type="button" class="chapter" id="psa-140">140</button>
+          <button type="button" class="chapter" id="psa-141">141</button>
+          <button type="button" class="chapter" id="psa-142">142</button>
+          <button type="button" class="chapter" id="psa-143">143</button>
+          <button type="button" class="chapter" id="psa-144">144</button>
+          <button type="button" class="chapter" id="psa-145">145</button>
+          <button type="button" class="chapter" id="psa-146">146</button>
+          <button type="button" class="chapter" id="psa-147">147</button>
+          <button type="button" class="chapter" id="psa-148">148</button>
+          <button type="button" class="chapter" id="psa-149">149</button>
+          <button type="button" class="chapter" id="psa-150">150</button>
         </div>
       </section>
 
